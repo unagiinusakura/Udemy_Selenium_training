@@ -1,0 +1,109 @@
+<HTMLのタグの種類>
+
+・h1~h6タグ:見出しを作成する。
+  ・h1が一番大きい見出し
+  ・数字が大きくなるほど小さい見出し
+   <h1>h1タグ</h1>
+   
+・pタグ:段落を構成する
+  <p>pタグは段落を作ります。ここは1つ目の段落です</p>
+  
+・inputタグ:テキスト入力欄やボタンを作成する
+  ・type属性によって指定する
+    text:テキストボックス, submit:送信ボタン
+    <input type="text" name="name" size="302 maxlegeth="20">
+    <input type="submit" value="検索">
+    
+・imgタグ
+ ・画像を表示する
+ ・src属性で表示する画像ファイルを指定
+         
+ <img src="test.png" alt="testイメージ" />
+ 
+・ul・ol・liタグ：箇条書きのリストを作成する
+    <ul>
+       <li>Python3のテスト</li>
+       <li>Pandasについて</li>
+    </ul>
+    
+    
+    <ol>
+       <li>Python3のテスト</li>
+       <li>Pandasについて</li>
+    </ol>        
+    
+・aタグ: リンクを作成する
+      <a href="https://www.amazon.co.jp/..."> </a>
+      
+・div,spanタグ
+ ・コードをグループ化する
+ ・まとめてCSSや属性でデザインを変更
+ ・divはグループの前後に改行が入り、spanは改行が入らない
+       
+   <div class="group1">
+        <h2>divタグとは</h2>
+        <p>HTMLコードをグループ化します。</p>
+   </div>
+   <div class="group2">
+        <h2>divのタグの使い方</h2>
+        <p>CSSや属性でレイアウトを変更します</p>
+   </div>
+   
+・tableタグ
+ ・テーブル（表）を作成する
+ ・tableタグ内にtrタグで一行を定義し、th(見出し)・td(データ)タグでセルを定義
+ 
+ 
+   <table border="1">
+       <tr bgcolor="#7fffd4">
+           <th align="center" width="100">引数</th>
+           <th align="center" width="100">必須/任意</th>
+           <th align="center" width="200">説明</th>
+       </tr>
+       <tr>
+           <td width="100">URL</td>
+           <td width="100">必須</td>
+           <td width="200">読み込み対象のURL</td>
+       </tr>
+   </table>
+   
+                             
+<HTMLタグの属性>
+ ・タグに挿入する追加の情報
+ ・属性と属性値から構成される
+ ・複数の属性を挿入することも可能    
+ 
+ 
+ href属性
+ ・aタグに挿入するリンク先URLの情報
+  <a href="https://www.amazon.co.jp/...">Python3...</a> 
+  
+id, class属性
+・タグに付加する識別情報
+・CSSでその識別名のタグのデザインを変更するのに用いる
+
+ <a class="book"id="link1">テスト</a>  
+ 
+id属性(基本は一意の値)
+・1つの属性値は、同じHTML内で1つのタグにだけ設定出来る
+ <p id="link1">本文1</p>
+ <p id="link2">本文2</p> 
+ 
+ 
+class属性
+・同じ属性値を複数のタグに設定できる
+・１つのタグに複数の属性値を設定することもできる
+
+<p class="recent books">           
+
+<CSSとは>
+・デザインやレイアウトを変更出来る
+・変更箇所をセレクタで指定
+
+  <style>
+  
+    .end{
+       color:red;
+       }
+  </style>
+  
